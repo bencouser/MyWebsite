@@ -47,12 +47,17 @@ p {
     color: #ffa500; /* Orange for sidebar links */
     text-decoration: none;
     display: block;
-    padding: 10px 0;
+    padding: 15px 10px; /* Increased padding */
+    transition: 0.3s ease; /* Transition effect for fading */
+    border-radius: 5px; /* Rounded corners */
+
 }
 
 .sidebar a:hover {
     background: #555;
+    border-radius: 5px; /* Rounded corners */
 }
+
 
 .search-container {
     margin: 20px 0;
