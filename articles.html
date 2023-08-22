@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="articles.html">Articles</a>
+<a href="template-article.html">Test Article</a>
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <button id="menuButton" class="menu-button">&#9776;</button>
+
+    <div class="container">
+        <h1>Articles</h1>
+        <div class="search-container">
+            <form action="" method="get">
+                <input type="text" id="searchBar" name="search" placeholder="Search articles..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <!-- Article List -->
+        <div class="articles-list">
+            <article>
+                <h2><a href="template-article.html">Article Title 1</a></h2>
+                <p class="meta-info">Published on: 2023-08-22</p>
+                <p>Summary of Article 1...</p>
+            </article>
+            <article>
+                <h2><a href="template-article.html">Article Title 2</a></h2>
+                <p class="meta-info">Published on: 2023-08-21</p>
+                <p>Summary of Article 2...</p>
+            </article>
+            <!-- Add more articles as needed -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

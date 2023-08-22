@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    margin-left: 220px;
+    background: #1a1a1a;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #ffa500; /* Orange for headers */
+}
+
+a {
+    color: #ffa500; /* Orange color */
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.meta-info {
+    color: #888;
+}
+
+.sidebar {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #111;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar a {
+    color: #ffa500; /* Orange for sidebar links */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar a:hover {
+    background: #555;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+#searchBar {
+    padding: 10px;
+    width: 90%;
+    border: 2px solid #ffa500; /* Orange border */
+}
+
+.search-container button {
+    padding: 10px;
+    background: #ffa500; /* Orange background */
+    color: #2a2a2a;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ff8811; /* Darker orange on hover */
+}
