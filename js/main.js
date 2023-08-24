@@ -72,7 +72,7 @@ if (window.location.href.endsWith('articles.html')) {
                 articlesList.appendChild(articleElement);
             });
         })
-        // Error handling
+        // Error Handling
         .catch(error => console.error('There was an error!', error));
 }
 
@@ -102,3 +102,47 @@ function loadArticle() {
 
 // Call the function when the page loads
 window.onload = loadArticle;
+
+/*
+This function checks to see if we are on books.html
+Loads the books.json file
+Creates a books-list element and shows it
+*/
+if (window.location.href.endsWith('books.html')) {
+    fetch('./data/books.json')
+        .then(response => response.json())
+        .then(books => {
+            // Creating Book List
+            const booksList = document.querySelector('.books-list');
+
+            books.forEach(book => {
+                // Create Book Element
+                const bookElement = document.createElement('div');
+
+                // Making Title
+                const titleElement = document.createElement('h2');
+                titleElement.textContent = book.title;
+
+                // Making Author
+                const authorElement = document.createElement('p');
+                authorElement.textContent = `Author: ${book.author}`;
+
+                // Making Book Summary
+                const summaryElement = document.createElement('p');
+                summaryElement.textContent = book.summary;
+
+                // Appending to Book Element 
+                bookElement.appendChild(titleElement);
+                bookElement.appendChild(authorElement);
+                bookElement.appendChild(summaryElement);
+
+                // Add to Book List
+                booksList.appendChild(bookElement);
+            });
+        })
+        // Error Handling
+        .catch(error => console.error('There was an error!', error));
+    }
+
+// Bit of fun
+window.onload = console.log("Easter Egg")

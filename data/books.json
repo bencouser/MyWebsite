@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "title": "My Second Article",
+    "author": "Ben Couser",
+    "summary": "This is a dummy 1"
+  },
+  {
+    "id": 1,
+    "title": "My First Article",
+    "author": "Ben Couser",
+    "summary": "This is a dummy 1"
+  },
+  {
+    "id": 0,
+    "title": "My Zeroth Article",
+    "author": "Ben Couser",
+    "summary": "This is a dummy 0"
+  }
+]
