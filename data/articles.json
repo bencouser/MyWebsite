@@ -1,17 +1,25 @@
 [
   {
+    "id": 2,
+    "title": "My Second Article",
+    "publishingDate": "2023-08-22",
+    "author": "Ben Couser2",
+    "summary": "This is a dummy 2",
+    "mainBody": "This is the main content of the second article..."
+  },
+  {
     "id": 1,
     "title": "My First Article",
-    "publishingDate": "2023-08-22",
-    "author": "Ben Couser",
+    "publishingDate": "2023-08-21",
+    "author": "Ben Couser1",
     "summary": "This is a dummy 1",
     "mainBody": "This is the main content of the first article..."
   },
   {
     "id": 0,
     "title": "My Zeroth Article",
-    "publishingDate": "2023-08-23",
-    "author": "Ben Couser",
+    "publishingDate": "2023-08-20",
+    "author": "Ben Couser0",
     "summary": "This is a dummy 0",
     "mainBody": "This is the main content of the zeroth article..."
   }
