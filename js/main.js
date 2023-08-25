@@ -2,7 +2,6 @@
 Smooth Scrolling to Sections
 This allows for smooth scrolling when clicking on anchor links.
 Used when different sections on your pages users can nav to.
-This will come in handy for main page once built up.
 */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
