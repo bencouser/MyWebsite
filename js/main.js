@@ -13,18 +13,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 /*
-Responsive Nav Bar
-Toggle a responsive nav menu for smaller screen sizes
-
-const menuButton = document.getElementById('menuButton');
-const sidebar = document.querySelector('.sidebar');
-
-menuButton.addEventListener('click', function() {
-    sidebar.classList.toggle('active');
-});
-*/
-
-/*
 This function checked if we are on the articles page.
 Reads the articles json file.
 Makes Title, publish date, author name and summary appear on the articles-list for each article.
