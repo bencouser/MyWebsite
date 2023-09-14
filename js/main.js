@@ -67,28 +67,33 @@ if (window.location.href.endsWith('articles.html')) {
 This function loads the article data based on what was clicked in the list
 */
 function loadArticle() {
-  // Get the ID from the URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get('id');
+    try {
+        // Get the ID from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
 
-  // Fetch the articles JSON
-  fetch('./data/articles.json')
-    .then(response => response.json())
-    .then(articles => {
-      // Find the article with the matching ID
-      const article = articles.find(a => a.id == id);
+        // Fetch the articles JSON
+        fetch('./data/articles.json')
+            .then(response => response.json())
+            .then(articles => {
+                // Find the article with the matching ID
+                const article = articles.find(a => a.id == id);
 
-      // Fill the page with the article data
-      document.querySelector('.article-title').textContent = article.title;
-      document.querySelector('.article-date').textContent = `Published on: ${article.publishingDate}`;
-      document.querySelector('.article-author').textContent = `Author: ${article.author}`;
-      document.querySelector('.article-body').innerHTML = article.mainBody; // assuming mainBody contains HTML
-    })
-    .catch(error => console.error('There was an error!', error));
+                // Fill the page with the article data
+                document.querySelector('.article-title').textContent = article.title;
+                document.querySelector('.article-date').textContent = `Published on: ${article.publishingDate}`;
+                document.querySelector('.article-author').textContent = `Author: ${article.author}`;
+                document.querySelector('.article-body').innerHTML = article.mainBody; // assuming mainBody contains HTML
+            })
+            .catch(error => console.error('There was an error!', error));
+    } catch (error) {
+        console.log("bad coding")
+    }
 }
 
 // Call the function when the page loads
-window.onload = loadArticle;
+window.addEventListener('load', loadArticle);
+
 
 /*
 This function checks to see if we are on books.html
