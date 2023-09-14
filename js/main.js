@@ -80,7 +80,7 @@ function loadArticle() {
                 const article = articles.find(a => a.id == id);
 
                 // Fill the page with the article data
-                document.querySelector('.article-title').textContent = article.title;
+                document.querySelector('.container .article-title').textContent = article.title;
                 document.querySelector('.article-date').textContent = `Published on: ${article.publishingDate}`;
                 document.querySelector('.article-author').textContent = `Author: ${article.author}`;
                 document.querySelector('.article-body').innerHTML = article.mainBody; // assuming mainBody contains HTML
