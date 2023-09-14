@@ -80,3 +80,7 @@ p {
 .search-container button:hover {
     background: #ff8811; /* Darker orange on hover */
 }
+
+html {
+    scroll-behavior: smooth;
+  }  
