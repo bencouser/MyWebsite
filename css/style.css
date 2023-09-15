@@ -37,7 +37,7 @@ p {
 
 /* Width changed to percentage to make it fluid */
 .sidebar {
-    width: 15%; /* Percentage-based width */
+    width: 10%; /* Percentage-based width */
     position: fixed;
     top: 0;
     left: 0;
