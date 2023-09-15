@@ -5,7 +5,7 @@
     "publishingDate": "2023-08-22",
     "author": "Ben Couser",
     "summary": "This is a dummy 2",
-    "mainBody": "This is the main content of the second article..."
+    "mainBody": "<hr>\n<h2>Introduction</h2>\n<p>Chess is a two-player strategy board game that has been played for centuries. It involves a 64-square board and 16 pieces for each player. The objective is simple: checkmate your opponent's king. However, the strategies that can be employed are almost endless, making it a complex and fascinating game.</p>\n<h2>History</h2>\n<p>The origins of chess can be traced back to the 6th century in India, where it was known as <em>Chaturanga</em>. The game spread to Persia, and eventually to the Islamic world and Europe.</p>\n<h2>Basic Rules</h2>\n<ul>\n  <li>Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns.</li>\n  <li>The board should be oriented so that each player has a white square in the bottom right corner.</li>\n  <li>Players take turns moving one piece at a time.</li>\n  <li>The game ends when a player's king is checkmated or a stalemate is reached.</li>\n</ul>\n<h2>Strategies</h2>\n<p>There are countless strategies and openings in chess, ranging from the Sicilian Defense to the Queen's Gambit. As players gain experience, they often delve deeper into these strategies to gain an edge over their opponents.</p>\n<h2>Conclusion</h2>\n<p>Chess is a game of endless possibilities and challenges. Whether you are a beginner or a grandmaster, there is always something new to learn and explore.</p>"
   },
   {
     "id": 1,
@@ -13,7 +13,7 @@
     "publishingDate": "2023-08-21",
     "author": "Ben Couser",
     "summary": "This is a dummy 1",
-    "mainBody": "This is the main content of the first article..."
+    "mainBody": "\n<p>Published on <em>2023-09-15</em></p>\n<hr>\n<h2>Introduction</h2>\n<p>'Crime and Punishment' is a classic novel written by Fyodor Dostoevsky in 1866. The book delves into the complexities of morality, justice, and the human psyche, making it a must-read for anyone interested in literature or philosophy.</p>\n<h2>Plot Summary</h2>\n<p>The story revolves around Rodion Raskolnikov, a young man who believes he is destined for great things. To prove his point and alleviate his family's financial burdens, he commits a murder, rationalizing it as a necessary evil. The rest of the book explores the psychological torment he experiences as a result.</p>\n<h2>Themes</h2>\n<ul>\n  <li>Morality and Justice: The book explores the complexities of right and wrong, examining how individuals rationalize their actions.</li>\n  <li>Alienation: Raskolnikov's internal struggles lead him to isolate himself, serving as a broader commentary on the human condition.</li>\n  <li>Social Critique: The story is also a critique of the societal conditions that lead people to commit desperate acts.</li>\n</ul>\n<h2>Impact"
   },
   {
     "id": 0,
