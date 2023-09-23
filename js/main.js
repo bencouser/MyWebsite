@@ -156,7 +156,7 @@ if (window.location.href.endsWith('books.html')) {
         })
         // Error Handling
         .catch(error => console.error('There was an error!', error));
-    }
+}
 
 
 // Bit of fun
