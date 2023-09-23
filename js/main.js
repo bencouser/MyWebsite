@@ -15,52 +15,74 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 /*
 This function checked if we are on the articles page.
 Reads the articles json file.
-Makes Title, publish date, author name and summary appear on the articles-list for each article.
+Filters based on search bar parameter
+Passes output to renderArticles()
 */
 if (window.location.href.endsWith('articles.html')) {
+    let allArticles = [];
+
     fetch('./data/articles.json')
         .then(response => response.json())
         .then(articles => {
-            // Creating Article List
-            const articlesList = document.querySelector('.articles-list');
-
-            articles.forEach(article => {
-                // Creating Article Element
-                const articleElement = document.createElement('article');
-
-                // Making Title and Hyperlink
-                const titleElement = document.createElement('h2');
-                const titleLink = document.createElement('a');
-                titleLink.href = 'template-article.html?id=' + article.id;
-                titleLink.textContent = article.title;
-                titleElement.appendChild(titleLink);
-
-                // Making Published Date
-                const dateElement = document.createElement('p');
-                dateElement.className = 'meta-info';
-                dateElement.textContent = `Published on: ${article.publishingDate}`;
-
-                // Making Author
-                const authorElement = document.createElement('p');
-                authorElement.className = 'meta-info';
-                authorElement.textContent = `Author: ${article.author}`;
-
-                // Making Summary
-                const summaryElement = document.createElement('p');
-                summaryElement.textContent = article.summary;
-
-                // Appending to Article Element
-                articleElement.appendChild(titleElement);
-                articleElement.appendChild(dateElement);
-                articleElement.appendChild(authorElement);
-                articleElement.appendChild(summaryElement);
-
-                // Add to Article List
-                articlesList.appendChild(articleElement);
-            });
+            allArticles = articles;
+            renderArticles(allArticles);
         })
-        // Error Handling
         .catch(error => console.error('There was an error!', error));
+
+    const searchBar = document.getElementById('searchBar');
+    searchBar.addEventListener('keyup', (e) => {
+        const searchString = e.target.value.toLowerCase();
+        const filteredArticles = allArticles.filter(article => {
+            return article.title.toLowerCase().includes(searchString) || article.summary.toLowerCase().includes(searchString);
+        });
+        renderArticles(filteredArticles);
+    });
+}
+
+/*
+This function is called through loading the articles page.
+It loades all articles that have passed through the searchbar filter.
+Then renders them to the page
+*/
+function renderArticles(articles){
+    const articlesList = document.querySelector('.articles-list');
+    articlesList.innerHTML = ''; // Clear existing articles before rendering
+
+    articles.forEach(article => {
+        // Creating Article Element
+        const articleElement = document.createElement('article');
+
+        // Making Title and Hyperlink
+        const titleElement = document.createElement('h2');
+        const titleLink = document.createElement('a');
+        titleLink.href = 'template-article.html?id=' + article.id;
+        titleLink.textContent = article.title;
+        titleElement.appendChild(titleLink);
+
+        // Making Published Date
+        const dateElement = document.createElement('p');
+        dateElement.className = 'meta-info';
+        dateElement.textContent = `Published on: ${article.publishingDate}`;
+
+        // Making Author
+        const authorElement = document.createElement('p');
+        authorElement.className = 'meta-info';
+        authorElement.textContent = `Author: ${article.author}`;
+
+        // Making Summary
+        const summaryElement = document.createElement('p');
+        summaryElement.textContent = article.summary;
+
+        // Appending to Article Element
+        articleElement.appendChild(titleElement);
+        articleElement.appendChild(dateElement);
+        articleElement.appendChild(authorElement);
+        articleElement.appendChild(summaryElement);
+
+        // Add to Article List
+        articlesList.appendChild(articleElement);
+    })
+
 }
 
 /*
@@ -135,6 +157,7 @@ if (window.location.href.endsWith('books.html')) {
         // Error Handling
         .catch(error => console.error('There was an error!', error));
     }
+
 
 // Bit of fun
 window.onload = console.log("Easter Egg")
