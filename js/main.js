@@ -21,6 +21,12 @@ Passes output to renderArticles()
 if (window.location.href.endsWith('articles.html')) {
     let allArticles = [];
 
+    // Prevent form submission
+    const form = document.querySelector('.search-container form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+    });
+
     fetch('./data/articles.json')
         .then(response => response.json())
         .then(articles => {
