@@ -11,7 +11,8 @@ This allows the container to resize based on the screen size. */
 .container {
     max-width: 100%;
     margin: 0 auto;
-    margin-left: 18%; /* Percentage-based margin */
+    margin-left: 15%; /* Percentage-based margin */
+    margin-right: 2%; /* Percentage-based margin */
     background: #1a1a1a;
     padding: 2%; /* Percentage-based padding */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -34,6 +35,20 @@ p {
 .meta-info {
     color: #888;
 }
+
+.education-details {
+    margin-top: 20px;
+}
+
+.course-list {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.course-item {
+    margin-bottom: 10px;
+}
+
 
 /* Width changed to percentage to make it fluid */
 .sidebar {
