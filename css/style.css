@@ -76,6 +76,13 @@ p {
     border-radius: 0.5em;
 }
 
+/* Media query to adjust font size for smaller screens */
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        font-size: 6px; /* Reduce font size */
+    }
+}
+
 .search-container {
     margin: 2% 0; /* Percentage-based margin */
 }
