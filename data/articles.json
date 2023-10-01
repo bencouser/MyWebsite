@@ -1,26 +1,26 @@
 [
   {
     "id": 2,
-    "title": "My Second Article",
-    "publishingDate": "2023-08-22",
+    "title": "The Game of Chess",
+    "publishingDate": "2023-09-01",
     "author": "Ben Couser",
-    "summary": "Chess",
+    "summary": "A GPT generated article on the basic rules of chess. Made for testing reasons",
     "mainBody": "<hr>\n<h2>Introduction</h2>\n<p>Chess is a two-player strategy board game that has been played for centuries. It involves a 64-square board and 16 pieces for each player. The objective is simple: checkmate your opponent's king. However, the strategies that can be employed are almost endless, making it a complex and fascinating game.</p>\n<h2>History</h2>\n<p>The origins of chess can be traced back to the 6th century in India, where it was known as <em>Chaturanga</em>. The game spread to Persia, and eventually to the Islamic world and Europe.</p>\n<h2>Basic Rules</h2>\n<ul>\n  <li>Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns.</li>\n  <li>The board should be oriented so that each player has a white square in the bottom right corner.</li>\n  <li>Players take turns moving one piece at a time.</li>\n  <li>The game ends when a player's king is checkmated or a stalemate is reached.</li>\n</ul>\n<h2>Strategies</h2>\n<p>There are countless strategies and openings in chess, ranging from the Sicilian Defense to the Queen's Gambit. As players gain experience, they often delve deeper into these strategies to gain an edge over their opponents.</p>\n<h2>Conclusion</h2>\n<p>Chess is a game of endless possibilities and challenges. Whether you are a beginner or a grandmaster, there is always something new to learn and explore.</p>"
   },
   {
     "id": 1,
-    "title": "My First Article",
+    "title": "Crime and Punishment",
     "publishingDate": "2023-08-21",
     "author": "Ben Couser",
-    "summary": "Crime and P",
+    "summary": "A GPT generated article on the book Crime and Punishment. Made for testing reasons",
     "mainBody": "\n<p>Published on <em>2023-09-15</em></p>\n<hr>\n<h2>Introduction</h2>\n<p>'Crime and Punishment' is a classic novel written by Fyodor Dostoevsky in 1866. The book delves into the complexities of morality, justice, and the human psyche, making it a must-read for anyone interested in literature or philosophy.</p>\n<h2>Plot Summary</h2>\n<p>The story revolves around Rodion Raskolnikov, a young man who believes he is destined for great things. To prove his point and alleviate his family's financial burdens, he commits a murder, rationalizing it as a necessary evil. The rest of the book explores the psychological torment he experiences as a result.</p>\n<h2>Themes</h2>\n<ul>\n  <li>Morality and Justice: The book explores the complexities of right and wrong, examining how individuals rationalize their actions.</li>\n  <li>Alienation: Raskolnikov's internal struggles lead him to isolate himself, serving as a broader commentary on the human condition.</li>\n  <li>Social Critique: The story is also a critique of the societal conditions that lead people to commit desperate acts.</li>\n</ul>\n<h2>Impact"
   },
   {
     "id": 0,
-    "title": "My Zeroth Article",
+    "title": "The Myth",
     "publishingDate": "2023-08-20",
     "author": "Ben Couser",
-    "summary": "The myth of sisyphus",
+    "summary": "A GPT generated article on the book The Myth of Sisyphus. Made for testing reasons",
     "mainBody": "\n<h2>The Myth</h2>\n<p>Sisyphus, a cunning king, is punished by the gods for his deceitfulness. His punishment is to roll a boulder up a hill, only to have it roll back down when he reaches the top, for all eternity.</p>\n<h2>Interpretations</h2>\n<ul>\n  <li><strong>Existentialism:</strong> Albert Camus famously interpreted the myth as an allegory for the human condition. He argued that life is absurd, yet we must continue to find meaning in our struggles.</li>\n  <li><strong>Futility:</strong> Some see the myth as a representation of the futility of human endeavors, where effort does not always result in achievement.</li>\n  <li><strong>Hope and Perseverance:</strong> Others interpret the myth as a lesson in hope and perseverance, highlighting the human capacity to endure.</li>\n</ul>\n<h2>Impact</h2>\n<p>The Myth of Sisyphus continues to be a subject of study and interpretation in various disciplines, including philosophy, literature, and psychology. Its universal themes make it relevant across cultures and eras.</p>\n<h2>Conclusion</h2>\n<p>The Myth of Sisyphus serves as a rich tapestry for exploring the complexities of human existence. Whether you see it as a tale of futility or a lesson in resilience, the story holds valuable insights into the nature of life and the human spirit.</p>"
   }
 ]
