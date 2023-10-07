@@ -119,8 +119,12 @@ function loadArticle() {
     }
 }
 
-// Call the function when the page loads
-window.addEventListener('load', loadArticle);
+console.log(window.location.pathname);
+
+if (window.location.pathname === './template-article.html') {
+    // Call the function
+    loadArticle();
+}
 
 
 /*
