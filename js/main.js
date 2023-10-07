@@ -57,6 +57,7 @@ function renderArticles(articles){
     articles.forEach(article => {
         // Creating Article Element
         const articleElement = document.createElement('article');
+        articleElement.setAttribute('data-article-id', article.id);
 
         // Making Title and Hyperlink
         const titleElement = document.createElement('h2');
@@ -119,11 +120,11 @@ function loadArticle() {
     }
 }
 
-console.log(window.location.pathname);
-
-if (window.location.pathname === './template-article.html') {
-    // Call the function
-    loadArticle();
+// On template-article.html
+if (window.location.href.includes('template-article.html')) {
+    window.addEventListener('load', function() {
+        loadArticle();
+    });
 }
 
 
