@@ -14,7 +14,7 @@ Hello there! Welcome to the repository for my personal website and blog. This pr
 - HTML
 - CSS
 - JavaScript
-- [ChatGPT](https://openai.com/research/chatgpt) for content generation and brainstorming
+- [ChatGPT](https://openai.com/research/chatgpt) for website generation and trouble shooting
 
 ## How to Contribute :handshake:
 
