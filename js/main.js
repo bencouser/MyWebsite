@@ -18,7 +18,7 @@ Reads the articles json file.
 Filters based on search bar parameter
 Passes output to renderArticles()
 */
-if (window.location.href.endsWith('articles.html')) {
+if (window.location.href.endsWith('Articles/')) {
     let allArticles = [];
 
     // Prevent form submission
@@ -27,7 +27,7 @@ if (window.location.href.endsWith('articles.html')) {
         e.preventDefault();
     });
 
-    fetch('./data/articles.json')
+    fetch('../data/articles.json')
         .then(response => response.json())
         .then(articles => {
             allArticles = articles;
@@ -62,7 +62,7 @@ function renderArticles(articles){
         // Making Title and Hyperlink
         const titleElement = document.createElement('h2');
         const titleLink = document.createElement('a');
-        titleLink.href = 'template-article.html?id=' + article.id;
+        titleLink.href = '../Article/';
         titleLink.textContent = article.title;
         titleElement.appendChild(titleLink);
 
@@ -102,7 +102,7 @@ function loadArticle() {
         const id = urlParams.get('id');
 
         // Fetch the articles JSON
-        fetch('./data/articles.json')
+        fetch('../data/articles.json')
             .then(response => response.json())
             .then(articles => {
                 // Find the article with the matching ID
@@ -121,7 +121,7 @@ function loadArticle() {
 }
 
 // On template-article.html
-if (window.location.href.includes('template-article.html')) {
+if (window.location.href.includes('Article/')) {
     window.addEventListener('load', function() {
         loadArticle();
     });
@@ -133,8 +133,8 @@ This function checks to see if we are on books.html
 Loads the books.json file
 Creates a books-list element and shows it
 */
-if (window.location.href.endsWith('books.html')) {
-    fetch('./data/books.json')
+if (window.location.href.endsWith('Books/')) {
+    fetch('../data/books.json')
         .then(response => response.json())
         .then(books => {
             // Creating Book List
