@@ -62,7 +62,7 @@ function renderArticles(articles){
         // Making Title and Hyperlink
         const titleElement = document.createElement('h2');
         const titleLink = document.createElement('a');
-        titleLink.href = '../Article/';
+        titleLink.href = '../Article/index.html?id=' + article.id;
         titleLink.textContent = article.title;
         titleElement.appendChild(titleLink);
 
@@ -95,6 +95,7 @@ function renderArticles(articles){
 /*
 This function loads the article data based on what was clicked in the list
 */
+// ... Previous code remains unchanged
 function loadArticle() {
     try {
         // Get the ID from the URL
@@ -102,23 +103,35 @@ function loadArticle() {
         const id = urlParams.get('id');
 
         // Fetch the articles JSON
-        fetch('../data/articles.json')
+        fetch('../data/articles.json')  // Make sure the path is correct
             .then(response => response.json())
             .then(articles => {
                 // Find the article with the matching ID
                 const article = articles.find(a => a.id == id);
 
-                // Fill the page with the article data
-                document.querySelector('.container .article-title').textContent = article.title;
-                document.querySelector('.article-date').textContent = `Published on: ${article.publishingDate}`;
-                document.querySelector('.article-author').textContent = `Author: ${article.author}`;
-                document.querySelector('.article-body').innerHTML = article.mainBody; // assuming mainBody contains HTML
+                if(article) {
+                    // Fill the page with the article data
+                    document.querySelector('.container .article-title').textContent = article.title;
+                    document.querySelector('.article-date').textContent = `Published on: ${article.publishingDate}`;
+                    document.querySelector('.article-author').textContent = `Author: ${article.author}`;
+                    document.querySelector('.article-body').innerHTML = article.mainBody;
+                } else {
+                    console.log("Article not found");
+                }
             })
             .catch(error => console.error('There was an error!', error));
     } catch (error) {
-        console.log("bad coding")
+        console.log("An error occurred: ", error);  // Improved error message
     }
 }
+
+// On template-article.html
+if (window.location.href.includes('Article/')) {
+    window.addEventListener('load', function() {
+        loadArticle();
+    });
+}
+
 
 // On template-article.html
 if (window.location.href.includes('Article/')) {
