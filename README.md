@@ -2,7 +2,7 @@
 
 ## Introduction :wave:
 
-Hello there! Welcome to the repository for my personal website and blog. This project serves as an experiment to gauge my productivity when utilising ChatGPT and enhance my linguistic skills. Go take a look [here!]www.bencouser.co.uk!
+Hello there! Welcome to the repository for my personal website and blog. This project serves as an experiment to gauge my productivity when utilising ChatGPT and enhance my linguistic skills. Go take a look [here!](www.bencouser.co.uk)
 
 ## Objectives :dart:
 
