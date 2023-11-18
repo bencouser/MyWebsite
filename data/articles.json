@@ -1,4 +1,12 @@
-[  
+[
+  {
+    "id": 6,
+    "title": "Illumin Escape",
+    "publishingDate": "2023-11-18",
+    "author": "Ben Couser",
+    "summary": "In this article, I share insights into the development of 'Illumin Escape', a 2D side scroller game with a unique twist. I discuss my initial concept, the progress I've made, challenges in graphics and animation, and my vision for the future of the game.",
+    "mainBody": "<hr>\n<h2>The Initial Idea</h2>\n<p>Embarking on my first solo game development project, I aimed for a manageable scope, deciding on a 2D side scroller game with a dark and creepy aesthetic. The game, influenced by 'Don’t Starve', involves a character with a limited sanity meter.</p>\n<h2>Progress to Date</h2>\n<ul>\n  <li>Spotlights that track the player and restore the sanity bar.</li>\n  <li>Player movement and respawning mechanics for when the sanity meter depletes.</li>\n  <li>A shadow enemy that patrols back and forth on its platform, reminiscent of a Koopa.</li>\n  <li>A red-eyed shadow enemy that floats near its spawn point, entering a lock-on state when the player is near, followed by a fast attack.</li>\n  <li>A tank enemy with back-and-forth movement, for which I'm still contemplating unique mechanics.</li>\n</ul>\n<h2>Animation and Graphics</h2>\n<p>Initially, I utilized DALLE for sprite creation. However, to elevate the game, I explored Krita, as recommended by my sister, a graphics student. Despite the steep learning curve and initial frustrations, I recognize the importance of this skill for game development. As an alternative, I'm considering a shift to pixel art, which seems more accessible and fitting for the indie game aesthetic.</p>\n<h2>What's Next?</h2>\n<p>Looking ahead, I want to add unique features to set 'Illumin Escape' apart. One idea is to leverage the sanity meter for speedrunning challenges. The game's evolving theme around mental health, highlighted through its light and dark elements, inspires me to incorporate mental health-themed mini-games into the respawning process. These would not only add depth to the gameplay but also introduce a random element, potentially enhancing the speedrunning experience.</p>"
+  },  
   {
     "id": 5,
     "title": "Game Development with Unity and C#",
