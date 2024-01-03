@@ -11,10 +11,13 @@ This allows the container to resize based on the screen size. */
 .container {
     max-width: 100%;
     margin: 0 auto;
-    margin-left: 15%; /* Percentage-based margin */
-    margin-right: 2%; /* Percentage-based margin */
+    margin-left: 15%;
+    /* Percentage-based margin */
+    margin-right: 2%;
+    /* Percentage-based margin */
     background: #1a1a1a;
-    padding: 2%; /* Percentage-based padding */
+    padding: 2%;
+    /* Percentage-based padding */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -24,7 +27,8 @@ h1 {
 
 a {
     color: #ffa500;
-    padding-bottom: 0.5em; /* Using em, which scales with font-size */
+    padding-bottom: 0.5em;
+    /* Using em, which scales with font-size */
 }
 
 p {
@@ -52,13 +56,15 @@ p {
 
 /* Width changed to percentage to make it fluid */
 .sidebar {
-    width: 10%; /* Percentage-based width */
+    width: 10%;
+    /* Percentage-based width */
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     background: #111;
-    padding: 1.5%; /* Percentage-based padding */
+    padding: 1.5%;
+    /* Percentage-based padding */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -66,9 +72,11 @@ p {
     color: #ffa500;
     text-decoration: none;
     display: block;
-    padding: 1em 0.7em; /* Use em for padding */
+    padding: 1em 0.7em;
+    /* Use em for padding */
     transition: 0.3s ease;
-    border-radius: 0.5em; /* Use em for border-radius */
+    border-radius: 0.5em;
+    /* Use em for border-radius */
 }
 
 .sidebar a:hover {
@@ -77,24 +85,37 @@ p {
 }
 
 /* Media query to adjust font size for smaller screens */
-@media only screen and (max-width: 768px) {
-    .sidebar {
-        font-size: 6px; /* Reduce font size */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        display: none;
+        /* Hide sidebar */
+    }
+
+    #toggleButton {
+        display: block;
+        /* Show toggle button */
+        margin: 0 auto;
+        margin-bottom: 2%;
     }
 }
 
 .search-container {
-    margin: 2% 0; /* Percentage-based margin */
+    margin: 2% 0;
+    /* Percentage-based margin */
 }
 
 #searchBar {
-    padding: 1em; /* Using em */
+    padding: 1em;
+    /* Using em */
     width: 90%;
-    border: 0.15em solid #ffa500; /* Using em for border-width */
+    border: 0.15em solid #ffa500;
+    /* Using em for border-width */
 }
 
 .search-container button {
-    padding: 1em; /* Using em */
+    padding: 1em;
+    /* Using em */
     background: #ffa500;
     color: #2a2a2a;
     border: none;
@@ -107,4 +128,8 @@ p {
 
 html {
     scroll-behavior: smooth;
+}
+
+#toggleButton {
+    display: none;
 }
