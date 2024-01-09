@@ -85,7 +85,7 @@ p {
 }
 
 /* Media query to adjust font size for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 100px) {
     #sidebar {
         width: 100%;
         display: none;
@@ -130,6 +130,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#toggleButton {
+.toggleButton {
     display: none;
 }

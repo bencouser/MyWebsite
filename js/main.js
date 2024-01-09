@@ -182,7 +182,7 @@ if (window.location.href.endsWith('Books/')) {
         .catch(error => console.error('There was an error!', error));
 }
 
-documnet.getElementById('toggleButton').addEventListener('click', function() {
+document.getElementById('toggleButton').addEventListener('click', function() {
     var sidebar = document.getElementById('sidebar');
     if (sidebar.style.display === "none" || sidebar.style.display === "") {
         sidebar.style.display = "block";
